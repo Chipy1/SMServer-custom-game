@@ -78,6 +78,23 @@ This matters for the Ender Chest recipe: its third ingredient is SComputers'
 dependency that ingredient is unknown and `LoadCraftingRecipes` drops the
 recipe.
 
+### Adding another mod's craftbot recipes
+
+1. Declare the mod in `description.json` `dependencies` (`fileId`, `localId`,
+   `name`), so its content is mounted as `$CONTENT_<localId>`.
+2. Register its recipe file in `SurvivalGame.loadCraftingRecipes`, e.g.
+   `craftbot_mymod = "$CONTENT_<localId>/CraftingRecipes/craftbot.json"`.
+3. Add the set name to the unlock list if its recipes should be craftable
+   immediately.
+4. `CustomCrafter` automatically discovers every loaded `craftbot_*` set and
+   appends it to the craftbot grid in a stable sorted order; no manual category
+   list edit is needed.
+
+`The Modpack Continuation` (`fileId 2448492759`) is registered as
+`craftbot_modpack` (122 recipes when its content is mounted). Its recipes that
+reference parts from other mods are only kept when those shapes are loaded;
+`LoadCraftingRecipes` drops recipes with unknown item UUIDs.
+
 ## Commands
 
 All commands are bound for every player and enforced server-side. The host is

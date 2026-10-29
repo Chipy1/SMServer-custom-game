@@ -6,6 +6,11 @@
          "fileId": 2949350596,
          "localId": "3aeb81c2-71b9-45a1-9479-1f48f1e8ff21",
          "name": "SComputers [Fork]"
+      },
+      {
+         "fileId": 2448492759,
+         "localId": "b7443f95-67b7-4f1e-82f4-9bef0c62c4b3",
+         "name": "The Modpack Continuation"
       }
    ],
    "description": "A minimal survival-based Custom Game for Scrap Mechanic. It keeps the stock survival game logic and provides a clean base for custom gameplay, server-side hardening, and future content.",

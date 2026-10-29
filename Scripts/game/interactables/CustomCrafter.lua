@@ -37,6 +37,35 @@ local CraftbotRecipeSets = {
 	{ name = "craftbot_rewards" }
 }
 
+-- Recipe sets are data driven: any loaded "craftbot_*" set is shown on the
+-- craftbot, including sets registered for dependencies. The order is stable
+-- (static list first, then sorted extras) so client grid indices match the
+-- server when a craft starts.
+local function getActiveRecipeSets( recipeSets )
+	local result = {}
+	local seen = {}
+	if not g_craftingRecipeSets then
+		return result
+	end
+	for _, recipeSet in ipairs( recipeSets or {} ) do
+		if g_craftingRecipeSets[recipeSet.name] then
+			result[#result + 1] = recipeSet
+			seen[recipeSet.name] = true
+		end
+	end
+	local extra = {}
+	for name in pairs( g_craftingRecipeSets ) do
+		if type( name ) == "string" and name:sub( 1, 9 ) == "craftbot_" and not seen[name] then
+			extra[#extra + 1] = name
+		end
+	end
+	table.sort( extra )
+	for _, name in ipairs( extra ) do
+		result[#result + 1] = { name = name }
+	end
+	return result
+end
+
 local SawTablesAscending = {
 	ITEMS.obj_interactive_sawtable1,
 	ITEMS.obj_interactive_sawtable2,
@@ -754,13 +783,8 @@ function CustomCrafter.cl_updateRecipeGrid( self )
 	self.cl.guiInterface:clearGrid( "RecipeGrid" )
 	local unlockedRecipes = RecipeManager.Cl_GetUnlockedRecipes()
 
-	if g_craftingRecipeSets then
-		for _, recipeSet in ipairs( self.crafter.recipeSets ) do
-			local recipeSetData = g_craftingRecipeSets[recipeSet.name]
-			if recipeSetData then
-				self.cl.guiInterface:addGridItemsFromFile( "RecipeGrid", recipeSetData.path, { unlockedRecipes = unlockedRecipes, speed = self.crafter.speed or 1, newRecipes = RecipeManager.Cl_GetNewUnlockedRecipes() } )
-			end
-		end
+	for _, recipeSet in ipairs( getActiveRecipeSets( self.crafter.recipeSets ) ) do
+		self.cl.guiInterface:addGridItemsFromFile( "RecipeGrid", g_craftingRecipeSets[recipeSet.name].path, { unlockedRecipes = unlockedRecipes, speed = self.crafter.speed or 1, newRecipes = RecipeManager.Cl_GetNewUnlockedRecipes() } )
 	end
 	self.cl.unlockedRecipesRevision = RecipeManager.Cl_GetUnlockedRevision()
 end
@@ -793,9 +817,9 @@ end
 
 function CustomCrafter.getRecipeByUuid( self, stringUuid )
 	local recipe = nil
-	for _, recipeSet in ipairs( self.crafter.recipeSets ) do
+	for _, recipeSet in ipairs( getActiveRecipeSets( self.crafter.recipeSets ) ) do
 		local recipeSetData = g_craftingRecipeSets[recipeSet.name]
-		if recipeSetData and recipeSetData.recipes[stringUuid] ~= nil then
+		if recipeSetData.recipes[stringUuid] ~= nil then
 			recipe = recipeSetData.recipes[stringUuid]
 			break
 		end
@@ -809,17 +833,15 @@ function CustomCrafter.getRecipeByIndex( self, index )
 	local recipeName = 0
 	local recipeIndex = 0
 	local offset = 0
-	for _, recipeSet in ipairs( self.crafter.recipeSets ) do
+	for _, recipeSet in ipairs( getActiveRecipeSets( self.crafter.recipeSets ) ) do
 		local recipeSetData = g_craftingRecipeSets[recipeSet.name]
-		if recipeSetData then
-			local recipeCount = #recipeSetData.recipesByIndex
-			if index <= offset + recipeCount then
-				recipeIndex = index - offset
-				recipeName = recipeSet.name
-				break
-			end
-			offset = offset + recipeCount
+		local recipeCount = #recipeSetData.recipesByIndex
+		if index <= offset + recipeCount then
+			recipeIndex = index - offset
+			recipeName = recipeSet.name
+			break
 		end
+		offset = offset + recipeCount
 	end
  
 	local recipe = g_craftingRecipeSets[recipeName].recipesByIndex[recipeIndex]
