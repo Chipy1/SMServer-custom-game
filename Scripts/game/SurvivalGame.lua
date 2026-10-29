@@ -63,6 +63,10 @@ local BlockedShapeUuids = {
 	["3d127db0-da28-4483-86fd-3eeed20fb85d"] = true,
 }
 
+local function isBlockedShapeUuid( uuid )
+	return BlockedShapeUuids[tostring( uuid )] == true or smserver_isBlockedItem( uuid )
+end
+
 function SurvivalGame.server_onCreate( self )
 	self.sv = {}
 	self.sv.saved = self.storage:load()
@@ -441,7 +445,7 @@ function SurvivalGame.loadCraftingRecipes( self )
 	recipeSets.craftbot_custom = "$CONTENT_DATA/CraftingRecipes/craftbot/craftbot_custom.json"
 	for setName, path in pairs( {
 		craftbot_scomputers = "$CONTENT_3aeb81c2-71b9-45a1-9479-1f48f1e8ff21/CraftingRecipes/craftbot.json",
-		craftbot_modpack = "$CONTENT_b7443f95-67b7-4f1e-82f4-9bef0c62c4b3/CraftingRecipes/craftbot.json",
+		craftbot_modpack = "$CONTENT_DATA/CraftingRecipes/dependencies/craftbot_modpack.json",
 	} ) do
 		if sm.json.fileExists( path ) then
 			recipeSets[setName] = path
@@ -455,6 +459,41 @@ function SurvivalGame.loadCraftingRecipes( self )
 		local ok = pcall( LoadCraftingRecipes, recipeSets )
 		if ok and g_craftingRecipeSets and g_craftingRecipeSets.craftbot_custom then
 			break
+		end
+	end
+
+	-- Remove production-blacklisted items from every loaded recipe set before
+	-- the recipe manager builds its unlock lists.
+	local blockedRecipeCount = 0
+	if g_craftingRecipeSets then
+		for _, recipeSet in pairs( g_craftingRecipeSets ) do
+			local kept = {}
+			for _, recipe in ipairs( recipeSet.recipesByIndex ) do
+				if smserver_isBlockedItem( recipe.itemId ) then
+					recipeSet.recipes[recipe.itemId] = nil
+					blockedRecipeCount = blockedRecipeCount + 1
+				else
+					kept[#kept + 1] = recipe
+				end
+			end
+			recipeSet.recipesByIndex = kept
+		end
+	end
+	if blockedRecipeCount > 0 then
+		sm.log.warning( "SMSERVER removed " .. tostring( blockedRecipeCount ) .. " blacklisted recipes" )
+	end
+	if g_crafterItems then
+		for itemId in pairs( g_crafterItems ) do
+			if smserver_isBlockedItem( itemId ) then
+				g_crafterItems[itemId] = nil
+			end
+		end
+	end
+	if g_unlockableCraftItems then
+		for itemId in pairs( g_unlockableCraftItems ) do
+			if smserver_isBlockedItem( itemId ) then
+				g_unlockableCraftItems[itemId] = nil
+			end
 		end
 	end
 end
@@ -1303,7 +1342,7 @@ function SurvivalGame.sv_smserverSpawnPart( self, uuid, position , ... )
 	if uuid == nil or position == nil or not sm.shape.uuidExists( uuid ) then
 		return
 	end
-	if BlockedShapeUuids[tostring( uuid )] then
+	if isBlockedShapeUuid( uuid ) then
 		return
 	end
 	if not sm.exists( self.sv.saved.overworld ) then
@@ -1443,7 +1482,7 @@ function SurvivalGame.sv_smserverCommand( self, params, ... )
 			self:sv_smserverNotify( player, "#ff0000unknown item uuid \"" .. tostring( params[2] ) .. "\"" )
 			return true
 		end
-		if BlockedShapeUuids[tostring( itemUuid )] then
+		if isBlockedShapeUuid( itemUuid ) then
 			self:sv_smserverNotify( player, "#ff0000this item is disabled" )
 			return true
 		end
@@ -1463,7 +1502,7 @@ function SurvivalGame.sv_smserverCommand( self, params, ... )
 			self:sv_smserverNotify( player, '#ff0000unknown part uuid "' .. tostring( params[2] ) .. '"' )
 			return true
 		end
-		if BlockedShapeUuids[tostring( partUuid )] then
+		if isBlockedShapeUuid( partUuid ) then
 			self:sv_smserverNotify( player, "#ff0000this part is disabled" )
 			return true
 		end

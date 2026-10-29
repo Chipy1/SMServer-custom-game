@@ -1,0 +1,6 @@
+{
+	"items": {
+		"c9e34f58-b30d-4ab5-92c5-76f707090c45": "gravity module: FPS-dependent per-creation gravity impulses",
+		"e93ca226-4166-49e3-97cd-bb8df20242d7": "gravity modulator: changes world gravity for the whole server"
+	}
+}

@@ -25,6 +25,29 @@ servicetool.admins = servicetool.admins or {}
 -- nickname/password gate, so this table is never consulted for access.
 servicetool.loginedNicknames = servicetool.loginedNicknames or {}
 
+-- Production item blacklist. Recipes for these UUIDs are removed at load and
+-- admin spawn/give commands reject them.
+servicetool.blockedItems = servicetool.blockedItems or {}
+servicetool.blockedItemReasons = servicetool.blockedItemReasons or {}
+if not servicetool.blocklistLoaded then
+	servicetool.blocklistLoaded = true
+	local path = "$CONTENT_DATA/Scripts/smserver/production_blacklist.json"
+	if sm.json.fileExists( path ) then
+		local ok, data = pcall( sm.json.open, path )
+		if ok and type( data ) == "table" and type( data.items ) == "table" then
+			for uuid, reason in pairs( data.items ) do
+				local key = tostring( uuid )
+				servicetool.blockedItems[key] = true
+				servicetool.blockedItemReasons[key] = tostring( reason )
+			end
+		end
+	end
+end
+
+function smserver_isBlockedItem( uuid )
+	return servicetool.blockedItems[tostring( uuid )] == true
+end
+
 function servicetool.getPlayerByName( name )
 	for _, player in ipairs( sm.player.getAllPlayers() ) do
 		if player.name == name then

@@ -177,6 +177,47 @@ std.event.sendToPlayer( player, "onSomething", { value = 1 } )
 `std.event` wrappers generate a random receiver name and per-call token, so a
 modified client cannot invoke arbitrary event handlers by name.
 
+## Production item blacklist
+
+`Scripts/smserver/production_blacklist.json` lists UUIDs that must not be
+craftable or spawnable:
+
+```json
+{ "items": { "<uuid>": "reason" } }
+```
+
+At world start the recipes for these items are removed from every loaded
+recipe set (and from the unlock/crafter maps), so they never reach the craftbot
+or schematic pool. `/give`, `/spawnpart`, and the world-bound spawner reject
+them as well. The number of removed recipes is written to the log.
+
+Currently blocked (The Modpack Continuation):
+
+- `c9e34f58-b30d-4ab5-92c5-76f707090c45` — gravity module, FPS-dependent
+  per-creation gravity impulses,
+- `e93ca226-4166-49e3-97cd-bb8df20242d7` — gravity modulator, changes world
+  gravity for the entire server.
+
+The craftbot grid is loaded by the engine straight from the recipe file, so the
+Lua filter alone would hide only craftability, not the grid entry. The game
+therefore ships a sanitized copy of the mod recipe file
+(`CraftingRecipes/dependencies/craftbot_modpack.json`) and points the
+`craftbot_modpack` set at it. Regenerate it after a mod update:
+
+```
+python3 tools/filter_recipes.py \
+  "$MOD_DATA/CraftingRecipes/craftbot.json" \
+  CraftingRecipes/dependencies/craftbot_modpack.json \
+  Scripts/smserver/production_blacklist.json
+```
+
+The Lua post-filter stays as a second line of defense for any set that is
+registered without a sanitized file.
+
+Blueprint/garage imports and already-placed shapes are engine-level and are not
+retroactively removed by this list; produce a clean production save and avoid
+importing creations that contain blocked UUIDs.
+
 ## Security limits
 
 Some reported issues are engine/client-authoritative and cannot be fixed in
