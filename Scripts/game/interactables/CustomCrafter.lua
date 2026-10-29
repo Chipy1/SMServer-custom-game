@@ -21,6 +21,7 @@ local MultiComponentKit = sm.uuid.new("b41de15e-a136-425a-a730-889b58cf4466")
 local CraftbotRecipeSets = {
 	{ name = "craftbot_core" },
 	{ name = "craftbot_custom" },
+	{ name = "craftbot_scomputers" },
 	{ name = "craftbot_manmade" },
 	{ name = "craftbot_small_pipes" },
 	{ name = "craftbot_pipes" },
@@ -755,7 +756,10 @@ function CustomCrafter.cl_updateRecipeGrid( self )
 
 	if g_craftingRecipeSets then
 		for _, recipeSet in ipairs( self.crafter.recipeSets ) do
-			self.cl.guiInterface:addGridItemsFromFile( "RecipeGrid", g_craftingRecipeSets[recipeSet.name].path, { unlockedRecipes = unlockedRecipes, speed = self.crafter.speed or 1, newRecipes = RecipeManager.Cl_GetNewUnlockedRecipes() } )
+			local recipeSetData = g_craftingRecipeSets[recipeSet.name]
+			if recipeSetData then
+				self.cl.guiInterface:addGridItemsFromFile( "RecipeGrid", recipeSetData.path, { unlockedRecipes = unlockedRecipes, speed = self.crafter.speed or 1, newRecipes = RecipeManager.Cl_GetNewUnlockedRecipes() } )
+			end
 		end
 	end
 	self.cl.unlockedRecipesRevision = RecipeManager.Cl_GetUnlockedRevision()
@@ -790,8 +794,9 @@ end
 function CustomCrafter.getRecipeByUuid( self, stringUuid )
 	local recipe = nil
 	for _, recipeSet in ipairs( self.crafter.recipeSets ) do
-		if g_craftingRecipeSets[recipeSet.name].recipes[stringUuid] ~= nil then
-			recipe = g_craftingRecipeSets[recipeSet.name].recipes[stringUuid]
+		local recipeSetData = g_craftingRecipeSets[recipeSet.name]
+		if recipeSetData and recipeSetData.recipes[stringUuid] ~= nil then
+			recipe = recipeSetData.recipes[stringUuid]
 			break
 		end
 	end
@@ -805,15 +810,16 @@ function CustomCrafter.getRecipeByIndex( self, index )
 	local recipeIndex = 0
 	local offset = 0
 	for _, recipeSet in ipairs( self.crafter.recipeSets ) do
-		assert( g_craftingRecipeSets[recipeSet.name].recipesByIndex )
-		local recipeCount = #g_craftingRecipeSets[recipeSet.name].recipesByIndex
-
-		if index <= offset + recipeCount then
-			recipeIndex = index - offset
-			recipeName = recipeSet.name
-			break
+		local recipeSetData = g_craftingRecipeSets[recipeSet.name]
+		if recipeSetData then
+			local recipeCount = #recipeSetData.recipesByIndex
+			if index <= offset + recipeCount then
+				recipeIndex = index - offset
+				recipeName = recipeSet.name
+				break
+			end
+			offset = offset + recipeCount
 		end
-		offset = offset + recipeCount
 	end
  
 	local recipe = g_craftingRecipeSets[recipeName].recipesByIndex[recipeIndex]

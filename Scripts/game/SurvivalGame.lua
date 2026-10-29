@@ -437,6 +437,10 @@ function SurvivalGame.loadCraftingRecipes( self )
 	recipeSets.mininghubDispenser = "$SURVIVAL_DATA/CraftingRecipes/mininghubDispenser.json"
 	recipeSets.sawtable = "$SURVIVAL_DATA/CraftingRecipes/sawtable.json"
 	recipeSets.craftbot_custom = "$CONTENT_DATA/CraftingRecipes/craftbot/craftbot_custom.json"
+	local scomputersRecipes = "$CONTENT_3aeb81c2-71b9-45a1-9479-1f48f1e8ff21/CraftingRecipes/craftbot.json"
+	if sm.json.fileExists( scomputersRecipes ) then
+		recipeSets.craftbot_scomputers = scomputersRecipes
+	end
 
 	-- The first time a new JSON file is opened the engine builds its const-data
 	-- cache and sm.json.open can fail. Retry so a fresh install does not need a
@@ -450,12 +454,18 @@ function SurvivalGame.loadCraftingRecipes( self )
 end
 
 function SurvivalGame.server_onFixedUpdate( self, timeStep )
-	-- Custom blocks are craftable from the start; there is no schematic source for them.
-	if g_recipeManager and g_craftingRecipeSets and g_craftingRecipeSets.craftbot_custom then
-		for itemId in pairs( g_craftingRecipeSets.craftbot_custom.recipes ) do
-			local itemIdString = tostring( itemId )
-			if not RecipeManager.Sv_IsUnlocked( itemIdString ) then
-				RecipeManager.Sv_UnlockRecipe( itemIdString, true )
+	-- Custom and dependency recipes are craftable from the start; there is no
+	-- schematic source for them.
+	if g_recipeManager and g_craftingRecipeSets then
+		for _, setName in ipairs( { "craftbot_custom", "craftbot_scomputers" } ) do
+			local recipeSet = g_craftingRecipeSets[setName]
+			if recipeSet then
+				for itemId in pairs( recipeSet.recipes ) do
+					local itemIdString = tostring( itemId )
+					if not RecipeManager.Sv_IsUnlocked( itemIdString ) then
+						RecipeManager.Sv_UnlockRecipe( itemIdString, true )
+					end
+				end
 			end
 		end
 	end

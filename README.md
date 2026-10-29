@@ -61,6 +61,23 @@ start (there is no schematic source for them).
 Ender chests store their contents in hidden `skycontainer` parts placed at
 (-10, -10, 2000), matching the original server behaviour.
 
+## Dependencies
+
+`description.json` declares **SComputers [Fork]** (`fileId 2949350596`,
+`localId 3aeb81c2-71b9-45a1-9479-1f48f1e8ff21`). ClassHook is pulled in by
+SComputers itself.
+
+Dependency recipes are not loaded by the stock game. `SurvivalGame` registers
+`$CONTENT_3aeb81c2-71b9-45a1-9479-1f48f1e8ff21/CraftingRecipes/craftbot.json`
+as the `craftbot_scomputers` set, `CustomCrafter` adds that set to the craftbot
+UI (and safely skips sets that are not mounted), and both custom and dependency
+recipes are unlocked at server start.
+
+This matters for the Ender Chest recipe: its third ingredient is SComputers'
+**Lua Computer** (`356ecbf5-d4fa-480f-8409-15d9d8add6a5`). Without the
+dependency that ingredient is unknown and `LoadCraftingRecipes` drops the
+recipe.
+
 ## Commands
 
 All commands are bound for every player and enforced server-side. The host is
