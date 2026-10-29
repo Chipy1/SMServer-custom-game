@@ -242,6 +242,8 @@ function SurvivalGame.bindChatCommands( self )
 	sm.game.bindChatCommand( "/give", { { "string", "item uuid", false }, { "int", "quantity", true } }, "cl_onChatCommand", "Give yourself an item" )
 	sm.game.bindChatCommand( "/spawnpart", { { "string", "part uuid", false } }, "cl_onChatCommand", "Spawn a part in front of you" )
 	sm.game.bindChatCommand( "/ppos", {}, "cl_onChatCommand", "Print your position" )
+	sm.game.bindChatCommand( "/unlimited", {}, "cl_onChatCommand", "Use the unlimited inventory" )
+	sm.game.bindChatCommand( "/limited", {}, "cl_onChatCommand", "Use the limited inventory" )
 
 	
 
@@ -1470,6 +1472,14 @@ function SurvivalGame.sv_smserverCommand( self, params, ... )
 		local spawnPos = character.worldPosition + character:getDirection() * 4 + sm.vec3.new( 0, 0, 1 )
 		self:sv_smserverSpawnPart( partUuid, spawnPos )
 		self:sv_smserverNotify( player, "#00ff00part spawned" )
+		return true
+	elseif params[1] == "/unlimited" or params[1] == "/limited" then
+		if not self:sv_smserverIsAdmin( player ) then
+			self:sv_smserverNotify( player, "#ff0000you are not an administrator" )
+			return true
+		end
+		self:sv_setLimitedInventory( params[1] == "/limited" )
+		self:sv_smserverNotify( player, params[1] == "/limited" and "limited inventory" or "unlimited inventory" )
 		return true
 	elseif params[1] == "/ppos" then
 		if not self:sv_smserverIsAdmin( player ) then
