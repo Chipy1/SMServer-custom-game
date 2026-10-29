@@ -1,0 +1,1 @@
+sob_pesticide_cloud = sm.uuid.new( "452a9c9f-16bc-47d6-a239-21b3438929ed" )

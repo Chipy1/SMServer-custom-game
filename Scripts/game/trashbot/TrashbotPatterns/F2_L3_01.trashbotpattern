@@ -1,0 +1,126 @@
+{
+	"patternSettings" : 
+	[
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 0,
+			"bubbleType" : "bh_straight_ball_green",
+			"duration" : 3,
+			"maxLifetime" : 7,
+			"name" : "Green_Start",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 3,
+			"bubbleType" : "bh_straight_ball_purple",
+			"duration" : 6,
+			"maxLifetime" : 7,
+			"name" : "Purple_01",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 10,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 9,
+			"bubbleType" : "bh_straight_ball_green",
+			"duration" : 3,
+			"maxLifetime" : 7,
+			"name" : "Green_01",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 12,
+			"bubbleType" : "bh_straight_ball_purple",
+			"duration" : 12,
+			"maxLifetime" : 7,
+			"name" : "Purple_02",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : -10,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 24,
+			"bubbleType" : "bh_straight_ball_green",
+			"duration" : 3,
+			"maxLifetime" : 7,
+			"name" : "Green_02",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 0.0
+		}
+	],
+	"systemSettings" : 
+	{
+		"invertRotationThreshold" : 0.0,
+		"repeatCount" : 0.0,
+		"rotationPerSecond" : 0.0
+	}
+}

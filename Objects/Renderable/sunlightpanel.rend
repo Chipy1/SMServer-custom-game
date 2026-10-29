@@ -1,0 +1,49 @@
+{
+   "lodList" : [
+      {
+         "mesh" : "$CONTENT_DATA/Objects/Mesh/sunlightpanel.fbx",
+         "subMeshList" : [
+            {
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_beacon_dif.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_beacon_asg.tga",
+                  "$SURVIVAL_DATA/Objects/Textures/interactive/obj_interactive_beacon_nor.tga"
+               ]
+            },
+            {
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$SURVIVAL_DATA/Terrain/Textures/Building/env_building_solarpanel_dif.tga",
+                  "$SURVIVAL_DATA/Terrain/Textures/Building/env_building_solarpanel_asg.tga",
+                  "$SURVIVAL_DATA/Terrain/Textures/Building/env_building_solarpanel_nor.tga"
+               ]
+            },
+            {
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$SURVIVAL_DATA/Terrain/Textures/Building/env_building_solarpanel_dif.tga",
+                  "$SURVIVAL_DATA/Terrain/Textures/Building/env_building_solarpanel_asg.tga",
+                  "$SURVIVAL_DATA/Terrain/Textures/Building/env_building_solarpanel_nor.tga"
+               ]
+            },
+            {
+               "material" : "DifAsgNor",
+               "textureList" : [
+                  "$SURVIVAL_DATA/Terrain/Textures/Building/env_building_softmetal_dif.tga",
+                  "$SURVIVAL_DATA/Terrain/Textures/Building/env_building_softmetal_asg.tga",
+                  "$SURVIVAL_DATA/Terrain/Textures/Building/env_building_softmetal_nor.tga"
+               ]
+            },
+            {
+               "material" : "DifAsgNor",
+               "textureList" : [ "", "", "" ]
+            },
+            {
+               "material" : "DifAsgNor",
+               "textureList" : [ "", "", "" ]
+            }
+         ]
+      }
+   ]
+}

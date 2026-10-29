@@ -1,0 +1,125 @@
+{
+	"patternSettings" : 
+	[
+		{
+			"acceleration" : 1.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_straight_ball_green",
+			"duration" : 10.0,
+			"maxLifetime" : 10.0,
+			"name" : "Green_Spiral_Growing",
+			"projectileSpeed" : 5.0,
+			"rotationPerSecond" : 20.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 1.0,
+			"splitAngle" : 0.0,
+			"startingAngle" : 0.0,
+			"targetRotationPoints" : 
+			[
+				{
+					"durationPoint" : 0.5,
+					"targetRotationSpeed" : 90.0
+				}
+			],
+			"targetSpawnIntervals" : 
+			[
+				{
+					"durationPoint" : 0.5,
+					"targetInterval" : 0.100000001
+				}
+			],
+			"targetSpeedPoints" : 
+			[
+				{
+					"durationPoint" : 0.5,
+					"targetSpeed" : 11.0
+				}
+			]
+		},
+		{
+			"acceleration" : 1.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_straight_ball_purple",
+			"duration" : 10.0,
+			"maxLifetime" : 10.0,
+			"name" : "Green_Spiral_Growing",
+			"projectileSpeed" : 5.0,
+			"rotationPerSecond" : 20.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 1.0,
+			"splitAngle" : 0.0,
+			"startingAngle" : 180.0,
+			"targetRotationPoints" : 
+			[
+				{
+					"durationPoint" : 0.5,
+					"targetRotationSpeed" : 90.0
+				}
+			],
+			"targetSpawnIntervals" : 
+			[
+				{
+					"durationPoint" : 0.5,
+					"targetInterval" : 0.100000001
+				}
+			],
+			"targetSpeedPoints" : 
+			[
+				{
+					"durationPoint" : 0.5,
+					"targetSpeed" : 11.0
+				}
+			]
+		},
+		{
+			"acceleration" : 1.0,
+			"activationDelay" : 41.0,
+			"bubbleType" : "bh_danger_ball_color01",
+			"duration" : 2.0,
+			"maxLifetime" : 10.0,
+			"name" : "Green_End",
+			"projectileSpeed" : 10.0,
+			"rotationPerSecond" : 0.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 3.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 30.0,
+			"splitAngle" : 12.0,
+			"startingAngle" : 180.0
+		}
+	],
+	"systemSettings" : 
+	{
+		"invertRotationThreshold" : 0.0,
+		"repeatCount" : 0.0,
+		"rotationPerSecond" : 5.0
+	}
+}

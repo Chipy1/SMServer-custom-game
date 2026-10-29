@@ -1,0 +1,159 @@
+{
+	"patternSettings" : 
+	[
+		{
+			"acceleration" : 5.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_curved02_ball_green",
+			"duration" : 4.0,
+			"heightOffset" : 
+			[
+				0.0,
+				0.0,
+				0.75
+			],
+			"maxLifetime" : 20.0,
+			"projectileSpeed" : 0.1,
+			"name" : "Curved_Green_01",
+			"originOffset" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"rotationPerSecond" : 15.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.2,
+			"spawnRadius" : 0.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 1.0,
+			"splitAngle" : 0.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 5.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_curved02_ball_purple",
+			"duration" : 4.0,
+			"heightOffset" : 
+			[
+				0.0,
+				0.0,
+				0.75
+			],
+			"maxLifetime" : 20.0,
+			"projectileSpeed" : 0.1,
+			"name" : "Curved_Purple_01",
+			"originOffset" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"rotationPerSecond" : 15.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.2,
+			"spawnRadius" : 0.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 1.0,
+			"splitAngle" : 0.0,
+			"startingAngle" : 180.0
+		},
+		{
+			"acceleration" : 5.0,
+			"activationDelay" : 4.0,
+			"bubbleType" : "bh_curved02_ball_green_c",
+			"duration" : 4.0,
+			"heightOffset" : 
+			[
+				0.0,
+				0.0,
+				0.75
+			],
+			"maxLifetime" : 20.0,
+			"projectileSpeed" : 0.1,
+			"name" : "Curved_Green_01c",
+			"originOffset" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"rotationPerSecond" : -15.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.2,
+			"spawnRadius" : 0.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 1.0,
+			"splitAngle" : 0.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 5.0,
+			"activationDelay" : 4.0,
+			"bubbleType" : "bh_curved02_ball_purple_c",
+			"duration" : 4.0,
+			"heightOffset" : 
+			[
+				0.0,
+				0.0,
+				0.75
+			],
+			"maxLifetime" : 20.0,
+			"projectileSpeed" : 0.1,
+			"name" : "Curved_Purple_01c",
+			"originOffset" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"rotationPerSecond" : -15.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.2,
+			"spawnRadius" : 0.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 1.0,
+			"splitAngle" : 0.0,
+			"startingAngle" : 180.0
+		}
+	],
+	"systemSettings" : 
+	{
+		"invertRotationThreshold" : 0.0,
+		"repeatCount" : 20.0,
+		"rotationPerSecond" : 0.0
+	}
+}

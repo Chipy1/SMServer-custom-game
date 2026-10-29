@@ -1,0 +1,47 @@
+{
+	"patternSettings" : 
+	[
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "Medium Purple",
+			"duration" : 10.0,
+			"heightOffset" : 
+			[
+				0.0,
+				0.0,
+				1.0
+			],
+			"maxLifetime" : 15.0,
+			"projectileSpeed" : 4.0,
+			"originOffset" : 
+			[
+				4.0,
+				4.0,
+				0.0
+			],
+			"rotationPerSecond" : 0.0,
+			"spawnInterval" : 0.5,
+			"spawnRadius" : 3.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1
+				}
+			},
+			"split" : 1.0,
+			"splitAngle" : 30.0,
+			"startingAngle" : 0.0,
+			"wallBounceLimit" : 0.0
+		}
+	],
+	"systemSettings" : 
+	{
+		"invertRotationThreshold" : 90.0,
+		"repeatCount" : 1.0,
+		"rotationPerSecond" : 30.0
+	}
+}

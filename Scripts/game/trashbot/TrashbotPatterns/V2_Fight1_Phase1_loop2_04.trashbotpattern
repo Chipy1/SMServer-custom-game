@@ -1,0 +1,221 @@
+{
+	"patternSettings" : 
+	[
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_straight_twister_purple",
+			"duration" : 5.0,
+			"easingType" : "easeInOutQuad",
+			"invertRotationEasing" : false,
+			"maxLifetime" : 9.0,
+			"name" : "Purple Cuved0",
+			"projectileSpeed" : 7.0,
+			"rotationPerSecond" : -120.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 3.0,
+			"splitAngle" : 120.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_straight_twister_green",
+			"duration" : 5.0,
+			"easingType" : "easeInOutQuad",
+			"invertRotationEasing" : false,
+			"maxLifetime" : 9.0,
+			"name" : "Green Cuved0",
+			"projectileSpeed" : 7.0,
+			"rotationPerSecond" : -120.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 3.0,
+			"splitAngle" : 120.0,
+			"startingAngle" : 60.0
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 5.0,
+			"bubbleType" : "bh_straight_twister_purple",
+			"duration" : 13.33,
+			"easingType" : "easeInOutQuad",
+			"invertRotationEasing" : true,
+			"invertRotationThreshold" : 60.0,
+			"maxLifetime" : 9.0,
+			"name" : "Purple Cuved",
+			"projectileSpeed" : 7.0,
+			"rotationPerSecond" : 18.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.125,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 3.0,
+			"splitAngle" : 120.0,
+			"startingAngle" : 0.0,
+			"targetRotationPoints" : 
+			[
+				{
+					"durationPoint" : 0.25,
+					"targetRotationSpeed" : 25.0
+				}
+			],
+			"targetSpawnIntervals" : 
+			[
+				{
+					"durationPoint" : 0.25,
+					"targetInterval" : 0.100000001
+				}
+			],
+			"targetSpeedPoints" : 
+			[
+				{
+					"durationPoint" : 0.25,
+					"targetSpeed" : 10.0
+				}
+			]
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 5.0,
+			"bubbleType" : "bh_straight_twister_green",
+			"duration" : 13.33,
+			"easingType" : "easeInOutQuad",
+			"invertRotationEasing" : true,
+			"invertRotationThreshold" : 60.0,
+			"maxLifetime" : 9.0,
+			"name" : "Green Cuved",
+			"projectileSpeed" : 7.0,
+			"rotationPerSecond" : 18.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.125,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 3.0,
+			"splitAngle" : 120.0,
+			"startingAngle" : 60.0,
+			"targetRotationPoints" : 
+			[
+				{
+					"durationPoint" : 0.25,
+					"targetRotationSpeed" : 25.0
+				}
+			],
+			"targetSpawnIntervals" : 
+			[
+				{
+					"durationPoint" : 0.25,
+					"targetInterval" : 0.100000001
+				}
+			],
+			"targetSpeedPoints" : 
+			[
+				{
+					"durationPoint" : 0.25,
+					"targetSpeed" : 10.0
+				}
+			]
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 18.33,
+			"bubbleType" : "bh_straight_twister_purple",
+			"duration" : 13.33,
+			"easingType" : "easeInOutQuad",
+			"invertRotationEasing" : false,
+			"maxLifetime" : 9.0,
+			"name" : "Purple Cuved2",
+			"projectileSpeed" : 7.0,
+			"rotationPerSecond" : -95.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 1.0,
+				"skipDuration" : 0.5
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.125,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 3.0,
+			"splitAngle" : 120.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 18.33,
+			"bubbleType" : "bh_straight_twister_green",
+			"duration" : 13.33,
+			"easingType" : "easeInOutQuad",
+			"invertRotationEasing" : false,
+			"maxLifetime" : 9.0,
+			"name" : "Green Cuved2",
+			"projectileSpeed" : 7.0,
+			"rotationPerSecond" : -95.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 1.0,
+				"skipDuration" : 0.5
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.125,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 3.0,
+			"splitAngle" : 120.0,
+			"startingAngle" : 60.0
+		}
+	],
+	"systemSettings" : 
+	{
+		"invertRotationThreshold" : 0.0,
+		"repeatCount" : 2.0,
+		"rotationPerSecond" : 120.0
+	}
+}

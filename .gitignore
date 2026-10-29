@@ -1,0 +1,21 @@
+# Local build artifacts
+Cache/
+Thumbnails/
+dist/
+*.zip
+
+# Logs created while testing
+*.log
+
+# Editor/OS files
+.DS_Store
+.idea/
+.vscode/
+
+# Never commit local credentials or server environment files
+.env
+.env.*
+
+# Python
+__pycache__/
+*.py[cod]

@@ -1,0 +1,131 @@
+{
+	"patternSettings" : 
+	[
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_arched_ball_green",
+			"duration" : 10.0,
+			"fireAngle" : 30.0,
+			"maxLifetime" : 10.0,
+			"name" : "green Arched",
+			"projectileSpeed" : 13.0,
+			"rotationPerSecond" : 0.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.5,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 12.0,
+			"splitAngle" : 30.0,
+			"startingAngle" : 0.0,
+			"targetSpeedPoints" : 
+			[
+				{
+					"durationPoint" : 0.25,
+					"targetSpeed" : 30.0
+				},
+				{
+					"durationPoint" : 0.75,
+					"targetSpeed" : 13.0
+				}
+			]
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_arched_ball_purple",
+			"duration" : 10.0,
+			"fireAngle" : 30.0,
+			"maxLifetime" : 10.0,
+			"name" : "Purple arched",
+			"projectileSpeed" : 30.0,
+			"rotationPerSecond" : 0.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.5,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 12.0,
+			"splitAngle" : 30.0,
+			"startingAngle" : 0.0,
+			"targetSpeedPoints" : 
+			[
+				{
+					"durationPoint" : 0.25,
+					"targetSpeed" : 13.0
+				},
+				{
+					"durationPoint" : 0.75,
+					"targetSpeed" : 30.0
+				}
+			]
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_big_ball_green",
+			"duration" : 10.0,
+			"maxLifetime" : 5.0,
+			"name" : "Green Big",
+			"projectileSpeed" : 10.0,
+			"rotationPerSecond" : 45.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.5,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 6.0,
+			"splitAngle" : 60.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_big_ball_purple",
+			"duration" : 10.0,
+			"maxLifetime" : 5.0,
+			"name" : "Purple Big ",
+			"projectileSpeed" : 10.0,
+			"rotationPerSecond" : 45.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.5,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 6.0,
+			"splitAngle" : 60.0,
+			"startingAngle" : 30.0
+		}
+	],
+	"systemSettings" : 
+	{
+		"invertRotationThreshold" : 0.0,
+		"repeatCount" : 3.0,
+		"rotationPerSecond" : 0.0
+	}
+}

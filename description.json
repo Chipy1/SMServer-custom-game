@@ -1,0 +1,11 @@
+{
+   "allow_add_mods": true,
+   "custom_icons": false,
+   "dependencies": [],
+   "description": "A minimal survival-based Custom Game for Scrap Mechanic. It keeps the stock survival game logic and provides a clean base for custom gameplay, server-side hardening, and future content.",
+   "fileId": 0,
+   "localId": "703ab739-902f-4838-b76b-9682f6a5c86a",
+   "name": "SM Custom Game",
+   "type": "Custom Game",
+   "version": 1
+}

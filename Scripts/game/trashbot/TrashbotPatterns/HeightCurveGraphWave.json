@@ -1,0 +1,45 @@
+{
+    "graph":
+    [
+        {
+            "distance" : 0.0,
+            "height" : 0.0
+        },
+        {
+            "distance" : 9.0,
+            "height" : 0.0
+        },
+        {
+            "distance" : 16,
+            "height" : 0.87
+        },
+        {
+            "distance" : 24.6,
+            "height" : 2.33
+        },
+        {
+            "distance" : 32.25,
+            "height" : 4.3
+        },
+        {
+            "distance" : 38.6,
+            "height" : 6.6
+        },
+        {
+            "distance" : 43.46,
+            "height" : 10.0
+        },
+        {
+            "distance" : 47.7,
+            "height" : 12.9
+        },
+        {
+            "distance" : 51.2,
+            "height" : 16.0
+        },
+        {
+            "distance" : 53.3,
+            "height" : 18.1
+        }
+    ]
+}

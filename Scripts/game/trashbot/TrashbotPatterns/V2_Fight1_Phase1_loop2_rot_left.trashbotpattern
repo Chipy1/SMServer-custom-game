@@ -1,0 +1,69 @@
+{
+	"patternSettings" : 
+	[
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 12.0,
+			"maxLifetime" : 5.0,
+			"name" : "Purple Cuved",
+			"projectileSpeed" : 12.0,
+			"rotationPerSecond" : 15.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 2.0,
+				"skipDuration" : 0.300000012
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.100000001,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 3.0,
+			"splitAngle" : 120.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_straight_star_green",
+			"duration" : 12.0,
+			"maxLifetime" : 5.0,
+			"name" : "Green Cuved",
+			"projectileSpeed" : 12.0,
+			"rotationPerSecond" : 15.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 2.0,
+				"skipDuration" : 0.300000012
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.100000001,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 3.0,
+			"splitAngle" : 120.0,
+			"startingAngle" : 60.0
+		}
+	],
+	"systemSettings" : 
+	{
+		"invertRotationThreshold" : 0.0,
+		"repeatCount" : 100.0,
+		"rotationPerSecond" : 0.0
+	}
+}

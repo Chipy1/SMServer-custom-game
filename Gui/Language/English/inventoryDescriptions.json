@@ -1,0 +1,18 @@
+{
+	"8581c92f-9390-48bf-a291-4bb786effbd7" : {
+		"description" : "Press E to access your ender chest. Press U to access the server's shared ender chest.",
+		"title" : "Ender Chest"
+	},
+	"3e1c8de8-2dd8-4397-bd25-7a0e38b0f619" : {
+		"description" : "Plug it into the battery containers and spin it up to generate batteries.",
+		"title" : "Generator"
+	},
+	"f8fb8503-3af8-489f-9244-465d7d5df1eb" : {
+		"description" : "Plug it into the battery containers and wait for the sun to charge them.",
+		"title" : "Sun-Light Panel"
+	},
+	"e85e06c9-628d-4327-a6dc-10a19e7fbf47" : {
+		"description" : "Protects your creation from other players. Press E to enable or disable it.",
+		"title" : "Private Block"
+	}
+}

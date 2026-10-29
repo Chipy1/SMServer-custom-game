@@ -1,0 +1,77 @@
+{
+    "graph":
+    [
+        {
+            "distance" : 0.0,
+            "height" : 0.0
+        },
+        {
+            "distance" : 6.0,
+            "height" : 0.0
+        },
+        {
+            "distance" : 9,
+            "height" : 0.063
+        },
+        {
+            "distance" : 12,
+            "height" : 0.252
+        },
+        {
+            "distance" : 15,
+            "height" : 0.57
+        },
+        {
+            "distance" : 18,
+            "height" : 1.0
+        },
+        {
+            "distance" : 21,
+            "height" : 1.5
+        },
+        {
+            "distance" : 24,
+            "height" : 2.2
+        },
+        {
+            "distance" : 27,
+            "height" : 3.0
+        },
+        {
+            "distance" : 30,
+            "height" : 3.9
+        },
+        {
+            "distance" : 33,
+            "height" : 5.0
+        },
+        {
+            "distance" : 36,
+            "height" : 6.0
+        },
+        {
+            "distance" : 39,
+            "height" : 7.3
+        },
+        {
+            "distance" : 42,
+            "height" : 8.7
+        },
+        {
+            "distance" : 45,
+            "height" : 10.35
+        },
+        {
+            "distance" : 48,
+            "height" : 12.8
+        },
+        {
+            "distance" : 51,
+            "height" : 16.2
+        },
+        {
+            "distance" : 54,
+            "height" : 20.8
+        }
+    ]
+}

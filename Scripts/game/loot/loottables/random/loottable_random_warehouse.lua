@@ -1,0 +1,33 @@
+LOOT_TABLES.loottable_random_warehouse = {
+	list = {
+		{ uuid = obj_consumable_gas,					weight = 1.0,	quantity = { 2, 3, 4 } },
+		{ uuid = obj_consumable_battery,				weight = 1.0,	quantity = { 1, 2, 3 } },
+		{ uuid = obj_consumable_glowstick,				weight = 1.0,	quantity = { 2, 4, 8 } },
+		{ uuid = obj_consumable_soilbag,				weight = 1.0,	quantity = { 1, 2, 3 } },
+		{ uuid = obj_interactive_propanetank_small,		weight = 1.0,	quantity = { 1 } },
+		{ uuid = obj_consumable_extinguisher,			weight = 1.0,	quantity = { 5, 10, 15 } },
+		{ uuid = obj_consumable_glue,					weight = 1.0,	quantity = { 1, 2, 3 } },
+		{ uuid = blk_glass,								weight = 1.0,	quantity = { 5, 7.5, 10 } },
+		{ uuid = blk_scrapmetal,						weight = 1.0,	quantity = { 10, 15, 20 } },
+		{ uuid = blk_metal1,							weight = 1.0,	quantity = { 10, 15, 20 } },
+		{ uuid = blk_wood1,								weight = 1.0,	quantity = { 10, 15, 20 } },
+		{ uuid = obj_consumable_component,				weight = 1.0,	quantity = 1 },
+		{ uuid = obj_resource_circuitboard,				weight = 1.0, 	quantity = { 1, 1, 2 } },
+		{ uuid = obj_consumable_sunshake, 				weight = 1.0, 	quantity = { 1, 1, 2 } },
+		{ uuid = obj_plantables_potato, 				weight = 1.0,	quantity = { 3, 5, 7 } },
+		{ uuid = obj_consumable_glowstick,				weight = 1.0,	quantity = { 3, 5, 7 } },
+		{ uuid = obj_consumable_inkammo,				weight = 1.0,	quantity = { 10, 15, 20 } },
+		{ uuid = obj_interactive_radio,					weight = 1.0,	quantity = 1 },
+		{ uuid = obj_decor_pillow,						weight = 1.0,	quantity = 1 },
+		{ uuid = obj_decor_toiletroll,					weight = 1.0,	quantity = 1 },
+		{ uuid = obj_decor_mug,							weight = 1.0,	quantity = 1 },
+		{ uuid = obj_decor_stackedpaper,				weight = 1.0,	quantity = 1 },
+		{ uuid = obj_plantables_banana,					weight = 1.0,	quantity = 1 },
+		{ uuid = obj_plantables_blueberry,				weight = 0.2,	quantity = 1 },
+		{ uuid = obj_plantables_orange,					weight = 0.2,	quantity = 1 },
+		{ uuid = obj_plantables_banana,					weight = 0.2,	quantity = 1 },
+		{ uuid = obj_plantables_carrot,					weight = 1.0,	quantity = 1 },
+		{ uuid = obj_plantables_tomato,					weight = 1.0,	quantity = 1 },
+		{ uuid = obj_plantables_redbeet,				weight = 1.0,	quantity = 1 }
+	}
+}

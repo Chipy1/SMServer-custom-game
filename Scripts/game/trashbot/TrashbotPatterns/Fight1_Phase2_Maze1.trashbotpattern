@@ -1,0 +1,353 @@
+{
+	"patternSettings" : 
+	[
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 3.0,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 110.0,
+			"heightOffset" : 
+			[
+				0.0,
+				0.0,
+				1.0
+			],
+			"maxLifetime" : 20.0,
+			"name" : "Arm_0",
+			"originOffset" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"projectileSpeed" : 3.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 4.0,
+				"skipDuration" : 0.699999988
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnRadius" : 1.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 1.0,
+			"splitAngle" : 0.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 0.7,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 110.0,
+			"heightOffset" : 
+			[
+				0.0,
+				0.0,
+				1.0
+			],
+			"invertRotationEasing" : false,
+			"maxLifetime" : 20.0,
+			"name" : "Arm_45",
+			"originOffset" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"projectileSpeed" : 3.0,
+			"rotationPerSecond" : 0.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 4.0,
+				"skipDuration" : 0.699999988
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnRadius" : 1.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 1.0,
+			"splitAngle" : 0.0,
+			"startingAngle" : 45.0
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 1.4,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 110.0,
+			"heightOffset" : 
+			[
+				0.0,
+				0.0,
+				1.0
+			],
+			"invertRotationEasing" : false,
+			"maxLifetime" : 20.0,
+			"name" : "Arm_90",
+			"originOffset" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"projectileSpeed" : 3.0,
+			"rotationPerSecond" : 0.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 4.0,
+				"skipDuration" : 0.699999988
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnRadius" : 1.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 1.0,
+			"splitAngle" : 0.0,
+			"startingAngle" : 90.0
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 2.1,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 110.0,
+			"heightOffset" : 
+			[
+				0.0,
+				0.0,
+				1.0
+			],
+			"invertRotationEasing" : false,
+			"maxLifetime" : 20.0,
+			"name" : "Arm_135",
+			"originOffset" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"projectileSpeed" : 3.0,
+			"rotationPerSecond" : 0.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 4.0,
+				"skipDuration" : 0.699999988
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnRadius" : 1.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 1.0,
+			"splitAngle" : 0.0,
+			"startingAngle" : 135.0
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 2.8,
+			"bubbleType" : "bh_straight_star_green",
+			"duration" : 110.0,
+			"heightOffset" : 
+			[
+				0.0,
+				0.0,
+				1.0
+			],
+			"invertRotationEasing" : false,
+			"maxLifetime" : 20.0,
+			"name" : "Arm_180",
+			"originOffset" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"projectileSpeed" : 3.0,
+			"rotationPerSecond" : 0.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 4.0,
+				"skipDuration" : 0.699999988
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnRadius" : 1.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 1.0,
+			"splitAngle" : 0.0,
+			"startingAngle" : 180.0
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 3.5,
+			"bubbleType" : "bh_straight_star_green",
+			"duration" : 110.0,
+			"heightOffset" : 
+			[
+				0.0,
+				0.0,
+				1.0
+			],
+			"invertRotationEasing" : false,
+			"maxLifetime" : 20.0,
+			"name" : "Arm_225",
+			"originOffset" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"projectileSpeed" : 3.0,
+			"rotationPerSecond" : 0.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 4.0,
+				"skipDuration" : 0.699999988
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnRadius" : 1.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 1.0,
+			"splitAngle" : 0.0,
+			"startingAngle" : 225.0
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 4.2,
+			"bubbleType" : "bh_straight_star_green",
+			"duration" : 110.0,
+			"heightOffset" : 
+			[
+				0.0,
+				0.0,
+				1.0
+			],
+			"invertRotationEasing" : false,
+			"maxLifetime" : 20.0,
+			"name" : "Arm_270",
+			"originOffset" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"projectileSpeed" : 3.0,
+			"rotationPerSecond" : 0.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 4.0,
+				"skipDuration" : 0.699999988
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnRadius" : 1.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 1.0,
+			"splitAngle" : 0.0,
+			"startingAngle" : 270.0
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 4.9,
+			"bubbleType" : "bh_straight_star_green",
+			"duration" : 110.0,
+			"heightOffset" : 
+			[
+				0.0,
+				0.0,
+				1.0
+			],
+			"invertRotationEasing" : false,
+			"maxLifetime" : 20.0,
+			"name" : "Arm_315",
+			"originOffset" : 
+			[
+				0.0,
+				0.0,
+				0.0
+			],
+			"projectileSpeed" : 3.0,
+			"rotationPerSecond" : 0.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 4.0,
+				"skipDuration" : 0.699999988
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnRadius" : 1.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 1.0,
+			"splitAngle" : 0.0,
+			"startingAngle" : 315.0
+		}
+	],
+	"systemSettings" : 
+	{
+		"invertRotationThreshold" : 0.0,
+		"repeatCount" : 3.0,
+		"rotationPerSecond" : 15.0
+	}
+}

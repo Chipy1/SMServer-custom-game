@@ -1,0 +1,9 @@
+{
+	"scriptableObjectList": [
+		{
+			"filename": "$CONTENT_DATA/Scripts/smserver/spawner.lua",
+			"classname": "SmserverSpawner",
+			"uuid": "ef0da7c7-84f2-41c7-9e58-347b98932b7f"
+		}
+	]
+}

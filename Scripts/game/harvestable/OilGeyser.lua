@@ -1,0 +1,73 @@
+dofile "$SURVIVAL_DATA/Scripts/game/survival_harvestable.lua"
+
+OilGeyser = class( nil )
+
+function OilGeyser.server_onCreate( self )
+	self.harvestable.publicData = {}
+end
+
+function OilGeyser.client_onInteract( self, state )
+	self.network:sendToServer( "sv_n_harvest" )
+end
+
+function OilGeyser.client_canInteract( self )
+	sm.gui.setInteractionText( "", GetInteractionKeybinding(), "#{INTERACTION_PICK_UP}" )
+	return true
+end
+
+function OilGeyser.server_canErase( self ) return true end
+function OilGeyser.client_canErase( self ) return true end
+
+function OilGeyser.server_onRemoved( self, player )
+	self:sv_n_harvest( nil, player )
+end
+
+function OilGeyser.client_onCreate( self )
+	self.cl = {}
+	self.cl.activeGeyser = sm.effect.createEffect( "Oilgeyser - OilgeyserLoop" )
+	self.cl.activeGeyser:setPosition( self.harvestable.worldPosition )
+	self.cl.activeGeyser:setRotation( self.harvestable.worldRotation )
+	self.cl.activeGeyser:setWorld( self.harvestable:getWorld() )
+	self.cl.activeGeyser:setAutoPlay( true )
+	self.cl.activeGeyserAmbience = sm.effect.createEffect( "Oilgeyser - OilgeyserAmbience" )
+	self.cl.activeGeyserAmbience:setPosition( self.harvestable.worldPosition )
+	self.cl.activeGeyserAmbience:setRotation( self.harvestable.worldRotation )
+	self.cl.activeGeyserAmbience:setWorld( self.harvestable:getWorld() )
+	self.cl.activeGeyserAmbience:setAutoPlay( true )
+end
+
+function OilGeyser.cl_n_onInventoryFull( self )
+	NotificationManager.Cl_AddGenericNotification( "#{INFO_INVENTORY_FULL}", 4 )
+end
+
+function OilGeyser.sv_n_harvest( self, _, player )
+	if not self.harvested and sm.exists( self.harvestable ) then
+		if SurvivalGame then
+			local container = player:getInventory()
+			local quantity = randomStackAmount( 1, 2, 4 )
+			if sm.container.beginTransaction() then
+				sm.container.collect( container, ITEMS.obj_resource_crudeoil, quantity )
+				if sm.container.endTransaction() then
+					sm.effect.playEffect( "Oilgeyser - Picked", self.harvestable.worldPosition )
+					sm.harvestable.createHarvestable( hvs_farmables_growing_oilgeyser, self.harvestable.worldPosition, self.harvestable.worldRotation )
+					sm.harvestable.destroy( self.harvestable )
+					self.harvested = true
+					self.harvestable.publicData.harvested = true
+				else
+					self.network:sendToClient( player, "cl_n_onInventoryFull" )
+				end
+			end
+		else
+			sm.effect.playEffect( "Oilgeyser - Picked", self.harvestable.worldPosition )
+			sm.harvestable.createHarvestable( hvs_farmables_growing_oilgeyser, self.harvestable.worldPosition, self.harvestable.worldRotation )
+			sm.harvestable.destroy( self.harvestable )
+			self.harvested = true
+			self.harvestable.publicData.harvested = true
+		end
+	end
+end
+
+function OilGeyser.client_onDestroy( self )
+	self.cl.activeGeyser:destroy()
+	self.cl.activeGeyserAmbience:destroy()
+end

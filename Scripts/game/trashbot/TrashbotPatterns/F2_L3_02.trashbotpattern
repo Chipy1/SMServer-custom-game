@@ -1,0 +1,310 @@
+{
+	"patternSettings" : 
+	[
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 0,
+			"bubbleType" : "bh_straight_ball_green",
+			"duration" : 5,
+			"maxLifetime" : 7,
+			"name" : "Green_Start",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 0,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 3,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_01_1",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 3.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 3.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 0,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 3,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_01_2",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 3.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 6.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 0,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 3,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_01_3",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 3.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 9.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 0,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 3,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_01_4",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 3.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 12.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 0,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 3,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_01_5",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 3.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 15.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 0,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 3,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_01_6",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 3.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 18.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 2,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 2,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_02_1",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 3.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 27.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 2,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 2,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_02_2",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 3.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 12.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 2,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 2,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_02_3",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 3.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 15.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 2,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 2,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_02_4",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 3.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 18.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 2,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 2,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_02_5",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 3.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 21.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 2,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 2,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_02_6",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 3.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 24.0
+		}
+	],
+	"systemSettings" : 
+	{
+		"invertRotationThreshold" : 0.0,
+		"repeatCount" : 2.0,
+		"rotationPerSecond" : 0.0
+	}
+}

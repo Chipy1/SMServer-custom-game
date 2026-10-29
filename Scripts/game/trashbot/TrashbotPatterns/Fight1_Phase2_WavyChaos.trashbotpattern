@@ -1,0 +1,110 @@
+{
+	"patternSettings" : 
+	[
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 5.0,
+			"bubbleType" : "bh_straight_ball_green",
+			"duration" : 10.0,
+			"maxLifetime" : 15.0,
+			"name" : "Green 1",
+			"projectileSpeed" : 10.0,
+			"rotationPerSecond" : 0.0,
+			"spawnChance" : 0.100000001,
+			"spawnInterval" : 0.100000001,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 9.0,
+			"splitAngle" : 10.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 8.0,
+			"bubbleType" : "bh_straight_ball_green",
+			"duration" : 8.0,
+			"maxLifetime" : 15.0,
+			"name" : "Green 2",
+			"projectileSpeed" : 10.0,
+			"rotationPerSecond" : 0.0,
+			"spawnChance" : 0.100000001,
+			"spawnInterval" : 0.100000001,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 9.0,
+			"splitAngle" : 10.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 10.0,
+			"bubbleType" : "bh_straight_ball_green",
+			"duration" : 5.0,
+			"maxLifetime" : 15.0,
+			"name" : "Green 3",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0.0,
+			"spawnChance" : 0.100000001,
+			"spawnInterval" : 0.100000001,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 9.0,
+			"splitAngle" : 10.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_curved01_ball_purple",
+			"duration" : 15.0,
+			"easingType" : "easeInOutQuad",
+			"invertRotationEasing" : true,
+			"invertRotationThreshold" : 60.0,
+			"maxLifetime" : 9.0,
+			"name" : "Purple Cuved",
+			"projectileSpeed" : 10.0,
+			"rotationPerSecond" : 25.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.150000006,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 6.0,
+			"splitAngle" : 60.0,
+			"startingAngle" : 0.0
+		}
+	],
+	"systemSettings" : 
+	{
+		"invertRotationThreshold" : 0.0,
+		"repeatCount" : 0.0,
+		"rotationPerSecond" : 120.0
+	}
+}

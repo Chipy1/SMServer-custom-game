@@ -1,0 +1,342 @@
+{
+	"patternSettings" : 
+	[
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 0,
+			"bubbleType" : "bh_straight_twister_purple",
+			"duration" : 3,
+			"maxLifetime" : 7,
+			"name" : "Green_Inital",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 4,
+			"bubbleType" : "bh_straight_twister_purple",
+			"duration" : 20,
+			"maxLifetime" : 7,
+			"name" : "Green_Start",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 5.0,
+				"skipDuration" : 1.0
+			},
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 4,
+			"bubbleType" : "bh_straight_twister_purple",
+			"duration" : 20,
+			"maxLifetime" : 7,
+			"name" : "Green_Start",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 5.0,
+				"skipDuration" : 1.0
+			},
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 12,
+			"splitAngle" : 30.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 4,
+			"bubbleType" : "bh_straight_ball_purple",
+			"duration" : 19,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_01",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 6.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 6,
+			"splitAngle" : 60.0,
+			"startingAngle" : 3.0,
+			"stepRotation" : 
+			{
+				"angle" : 30.0,
+				"stepTime" : 6.0
+			}
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 4,
+			"bubbleType" : "bh_straight_ball_purple",
+			"duration" : 19,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_02",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 6.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 6,
+			"splitAngle" : 60.0,
+			"startingAngle" : 6.0,
+			"stepRotation" : 
+			{
+				"angle" : 30.0,
+				"stepTime" : 6.0
+			}
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 4,
+			"bubbleType" : "bh_straight_ball_purple",
+			"duration" : 19,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_03",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 6.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 6,
+			"splitAngle" : 60.0,
+			"startingAngle" : 9.0,
+			"stepRotation" : 
+			{
+				"angle" : 30.0,
+				"stepTime" : 6.0
+			}
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 4,
+			"bubbleType" : "bh_straight_ball_purple",
+			"duration" : 19,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_04",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 6.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 6,
+			"splitAngle" : 60.0,
+			"startingAngle" : 12.0,
+			"stepRotation" : 
+			{
+				"angle" : 30.0,
+				"stepTime" : 6.0
+			}
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 4,
+			"bubbleType" : "bh_straight_ball_purple",
+			"duration" : 19,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_05",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 6.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 6,
+			"splitAngle" : 60.0,
+			"startingAngle" : 15.0,
+			"stepRotation" : 
+			{
+				"angle" : 30.0,
+				"stepTime" : 6.0
+			}
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 4,
+			"bubbleType" : "bh_straight_ball_purple",
+			"duration" : 19,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_06",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 6.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 6,
+			"splitAngle" : 60.0,
+			"startingAngle" : 18.0,
+			"stepRotation" : 
+			{
+				"angle" : 30.0,
+				"stepTime" : 6.0
+			}
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 4,
+			"bubbleType" : "bh_straight_ball_purple",
+			"duration" : 19,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_07",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 6.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 6,
+			"splitAngle" : 60.0,
+			"startingAngle" : 21.0,
+			"stepRotation" : 
+			{
+				"angle" : 30.0,
+				"stepTime" : 6.0
+			}
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 4,
+			"bubbleType" : "bh_straight_ball_purple",
+			"duration" : 19,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_08",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 6.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 6,
+			"splitAngle" : 60.0,
+			"startingAngle" : 24.0,
+			"stepRotation" : 
+			{
+				"angle" : 30.0,
+				"stepTime" : 6.0
+			}
+		},
+		{
+			"acceleration" : 2.0,
+			"activationDelay" : 4,
+			"bubbleType" : "bh_straight_ball_purple",
+			"duration" : 19,
+			"maxLifetime" : 7,
+			"name" : "Purple_wall_09",
+			"projectileSpeed" : 6.0,
+			"rotationPerSecond" : 0,
+			"spawnInterval" : 6.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 1,
+					"range" : 1.0
+				}
+			},
+			"split" : 6,
+			"splitAngle" : 60.0,
+			"startingAngle" : 27.0,
+			"stepRotation" : 
+			{
+				"angle" : 30.0,
+				"stepTime" : 6.0
+			}
+		}
+	],
+	"systemSettings" : 
+	{
+		"invertRotationThreshold" : 0.0,
+		"repeatCount" : 100.0,
+		"rotationPerSecond" : 0.0
+	}
+}

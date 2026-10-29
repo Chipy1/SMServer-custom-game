@@ -1,0 +1,185 @@
+{
+	"patternSettings" : 
+	[
+		{
+			"acceleration" : 5.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_curved02_twister_purple",
+			"duration" : 20.0,
+			"maxLifetime" : 20.0,
+			"name" : "Curved_Green_01",
+			"projectileSpeed" : 0.100000001,
+			"rotationPerSecond" : 15.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 5.0,
+				"skipDuration" : 1.0
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 4.0,
+			"splitAngle" : 90.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 5.0,
+			"activationDelay" : 20.0,
+			"bubbleType" : "bh_curved02_twister_green_c",
+			"duration" : 20.0,
+			"maxLifetime" : 20.0,
+			"name" : "Curved_Purple_01",
+			"projectileSpeed" : 0.100000001,
+			"rotationPerSecond" : -15.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 5.0,
+				"skipDuration" : 1.0
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 4.0,
+			"splitAngle" : 90.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 5.0,
+			"activationDelay" : 40.0,
+			"bubbleType" : "bh_curved02_twister_purple",
+			"duration" : 10.0,
+			"maxLifetime" : 20.0,
+			"name" : "Curved_Green_02",
+			"projectileSpeed" : 0.100000001,
+			"rotationPerSecond" : 0.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 5.0,
+				"skipDuration" : 1.0
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 12.0,
+			"splitAngle" : 30.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 5.0,
+			"activationDelay" : 50.0,
+			"bubbleType" : "bh_curved02_twister_green_c",
+			"duration" : 10.0,
+			"maxLifetime" : 20.0,
+			"name" : "Curved_Purple_02",
+			"projectileSpeed" : 0.100000001,
+			"rotationPerSecond" : 0.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 5.0,
+				"skipDuration" : 1.0
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 12.0,
+			"splitAngle" : 30.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 5.0,
+			"activationDelay" : 60.0,
+			"bubbleType" : "bh_curved02_twister_purple",
+			"duration" : 30.0,
+			"maxLifetime" : 20.0,
+			"name" : "Curved_Green_03",
+			"projectileSpeed" : 0.100000001,
+			"rotationPerSecond" : 15.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 4.0,
+				"skipDuration" : 4.0
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 4.0,
+			"splitAngle" : 90.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 5.0,
+			"activationDelay" : 64.0,
+			"bubbleType" : "bh_curved02_twister_green_c",
+			"duration" : 30.0,
+			"maxLifetime" : 20.0,
+			"name" : "Curved_Purple_03",
+			"projectileSpeed" : 0.100000001,
+			"rotationPerSecond" : -15.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 4.0,
+				"skipDuration" : 4.0
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 4.0,
+			"splitAngle" : 90.0,
+			"startingAngle" : 0.0
+		}
+	],
+	"systemSettings" : 
+	{
+		"invertRotationThreshold" : 0.0,
+		"repeatCount" : 10.0,
+		"rotationPerSecond" : 0.0
+	}
+}

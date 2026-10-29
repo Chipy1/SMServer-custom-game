@@ -1,0 +1,83 @@
+{
+	"patternSettings" : 
+	[
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 9.0,
+			"maxLifetime" : 16.5,
+			"name" : "Purple_wall_1",
+			"projectileSpeed" : 3.0,
+			"rotationPerSecond" : 0.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 10.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 50.0,
+			"splitAngle" : 3.0,
+			"startingAngle" : -70.0
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 9.0,
+			"maxLifetime" : 16.5,
+			"name" : "Purple_wall_2",
+			"projectileSpeed" : 3.0,
+			"rotationPerSecond" : 0.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 10.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 50.0,
+			"splitAngle" : 3.0,
+			"startingAngle" : 110.0
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 1.0,
+			"bubbleType" : "bh_big_ball_green",
+			"duration" : 7.0,
+			"maxLifetime" : 17.0,
+			"name" : "BIG_Green",
+			"projectileSpeed" : 3.0,
+			"rotationPerSecond" : 60.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 2.0,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 5.0,
+			"splitAngle" : 72.0,
+			"startingAngle" : 110.0
+		}
+	],
+	"systemSettings" : 
+	{
+		"invertRotationThreshold" : 0.0,
+		"repeatCount" : 0.0,
+		"rotationPerSecond" : 0.0
+	}
+}

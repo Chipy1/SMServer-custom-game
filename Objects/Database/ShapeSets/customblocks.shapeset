@@ -1,0 +1,205 @@
+{
+	"partList": [
+		{
+			"box": {
+				"x": 3,
+				"y": 2,
+				"z": 3
+			},
+			"color": "000000",
+			"flammable": false,
+			"name": "obj_smserver_enderchest",
+			"physicsMaterial": "Mechanical",
+			"ratings": {
+				"buoyancy": 8,
+				"density": 8,
+				"durability": 6,
+				"friction": 5
+			},
+			"renderable": "$CONTENT_DATA/Objects/Renderable/enderchest.rend",
+			"rotationSet": "PropY",
+			"scripted": {
+				"classname": "enderchest",
+				"filename": "$CONTENT_DATA/Scripts/smserver/enderchest.lua"
+			},
+			"sticky": "-Y",
+			"uuid": "8581c92f-9390-48bf-a291-4bb786effbd7"
+		},
+		{
+			"box": {
+				"x": 3,
+				"y": 2,
+				"z": 3
+			},
+			"color": "ff0000",
+			"flammable": false,
+			"name": "obj_smserver_skycontainer",
+			"physicsMaterial": "Mechanical",
+			"ratings": {
+				"buoyancy": 8,
+				"density": 8,
+				"durability": 6,
+				"friction": 5
+			},
+			"renderable": "$CONTENT_DATA/Objects/Renderable/enderchest.rend",
+			"restrictions": {
+				"buildable": false,
+				"connectable": false,
+				"convertibleToDynamic": false,
+				"destructable": false,
+				"erasable": false,
+				"liftable": false,
+				"paintable": false,
+				"usable": false
+			},
+			"rotationSet": "PropY",
+			"scripted": {
+				"classname": "skycontainer",
+				"filename": "$CONTENT_DATA/Scripts/smserver/skycontainer.lua"
+			},
+			"showInInventory": false,
+			"sticky": "-Y",
+			"uuid": "1041ace6-6df4-4a85-b2a5-cf4e76308e4d"
+		},
+		{
+			"color": "ff0000",
+			"cylinder": {
+				"axis": "Y",
+				"depth": 7,
+				"diameter": 5
+			},
+			"flammable": true,
+			"name": "obj_smserver_generator",
+			"physicsMaterial": "Metal",
+			"ratings": {
+				"buoyancy": 1,
+				"density": 9,
+				"durability": 3,
+				"friction": 2
+			},
+			"renderable": {
+				"lodList": [
+					{
+						"includes": [
+							"POSITION",
+							"UV0",
+							"UV1",
+							"NORMAL",
+							"TANGENTS"
+						],
+						"mesh": "$SURVIVAL_DATA/Objects/Mesh/warehouse/obj_warehouse_overheadcranerope.fbx",
+						"subMeshList": [
+							{
+								"material": "DifAsgNorAo",
+								"textureList": [
+									"$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_overheadcrane_dif.tga",
+									"$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_overheadcrane_asg.tga",
+									"$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_overheadcrane_nor.tga",
+									"$SURVIVAL_DATA/Objects/Textures/warehouse/obj_warehouse_overheadcrane_ao.tga"
+								]
+							}
+						]
+					}
+				]
+			},
+			"rotationSet": "PropY",
+			"scripted": {
+				"classname": "generator",
+				"filename": "$CONTENT_DATA/Scripts/smserver/generator.lua"
+			},
+			"sticky": "-Y+Y",
+			"uuid": "3e1c8de8-2dd8-4397-bd25-7a0e38b0f619"
+		},
+		{
+			"box": {
+				"x": 4,
+				"y": 6,
+				"z": 4
+			},
+			"color": "7FFFD4",
+			"name": "obj_smserver_sunlightpanel",
+			"physicsMaterial": "Default",
+			"renderable": "$CONTENT_DATA/Objects/Renderable/sunlightpanel.rend",
+			"rotationSet": "PropY",
+			"scripted": {
+				"classname": "sunlightpanel",
+				"filename": "$CONTENT_DATA/Scripts/smserver/sunlightpanel.lua"
+			},
+			"sticky": "-Y",
+			"uuid": "f8fb8503-3af8-489f-9244-465d7d5df1eb"
+		},
+		{
+			"box": {
+				"x": 4,
+				"y": 4,
+				"z": 4
+			},
+			"color": "000000",
+			"name": "obj_smserver_privateblock",
+			"physicsMaterial": "Default",
+			"ratings": {
+				"durability": 10
+			},
+			"renderable": {
+				"lodList": [
+					{
+						"mesh": "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_lights_off.fbx",
+						"pose0": "$CHALLENGE_DATA/Objects/Mesh/interactive/obj_interactive_lights_on.fbx",
+						"subMeshList": [
+							{
+								"material": "PoseAnimDifAsgNor",
+								"textureList": [
+									"$CHALLENGE_DATA/Objects/Textures/interactive/obj_challengemode_starter_block_dif.tga",
+									"$CHALLENGE_DATA/Objects/Textures/interactive/obj_challengemode_starter_block_asg.tga",
+									"$CHALLENGE_DATA/Objects/Textures/interactive/obj_challengemode_starter_block_nor.tga"
+								]
+							}
+						]
+					}
+				]
+			},
+			"rotationSet": "PropY",
+			"scripted": {
+				"classname": "privateblock",
+				"filename": "$CONTENT_DATA/Scripts/smserver/privateblock.lua"
+			},
+			"uuid": "e85e06c9-628d-4327-a6dc-10a19e7fbf47"
+		},
+		{
+			"box": {
+				"x": 2,
+				"y": 2,
+				"z": 2
+			},
+			"color": "df7f01",
+			"flammable": false,
+			"name": "obj_interactive_blockstack_disabled",
+			"physicsMaterial": "Glass",
+			"ratings": {
+				"buoyancy": 2,
+				"density": 3,
+				"durability": 1,
+				"friction": 3
+			},
+			"renderable": "$GAME_DATA/Objects/Renderable/invisible/obj_invisible_triangle.rend",
+			"restrictions": {
+				"buildable": false,
+				"connectable": false,
+				"convertibleToDynamic": false,
+				"destructable": false,
+				"erasable": true,
+				"liftable": false,
+				"paintable": false,
+				"usable": false
+			},
+			"rotationSet": "PropY",
+			"showInInventory": false,
+			"stackSize": 1,
+			"uuid": "3d127db0-da28-4483-86fd-3eeed20fb85d",
+			"scripted": {
+				"classname": "blockstack_dummy",
+				"filename": "$CONTENT_DATA/Scripts/smserver/blockstack_dummy.lua"
+			}
+		}
+	]
+}

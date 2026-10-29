@@ -1,0 +1,107 @@
+{
+	"patternSettings" : 
+	[
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_straight_twister_purple",
+			"duration" : 30.0,
+			"easingType" : "easeInOutQuad",
+			"invertRotationEasing" : true,
+			"invertRotationThreshold" : 60.0,
+			"maxLifetime" : 9.0,
+			"name" : "Purple Cuved",
+			"projectileSpeed" : 7.0,
+			"rotationPerSecond" : 18.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.125,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 3.0,
+			"splitAngle" : 120.0,
+			"startingAngle" : 0.0,
+			"targetRotationPoints" : 
+			[
+				{
+					"durationPoint" : 0.25,
+					"targetRotationSpeed" : 25.0
+				}
+			],
+			"targetSpawnIntervals" : 
+			[
+				{
+					"durationPoint" : 0.25,
+					"targetInterval" : 0.100000001
+				}
+			],
+			"targetSpeedPoints" : 
+			[
+				{
+					"durationPoint" : 0.25,
+					"targetSpeed" : 10.0
+				}
+			]
+		},
+		{
+			"acceleration" : 0.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_straight_twister_green",
+			"duration" : 30.0,
+			"easingType" : "easeInOutQuad",
+			"invertRotationEasing" : true,
+			"invertRotationThreshold" : 60.0,
+			"maxLifetime" : 9.0,
+			"name" : "Green Cuved",
+			"projectileSpeed" : 7.0,
+			"rotationPerSecond" : 18.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.125,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 3.0,
+			"splitAngle" : 120.0,
+			"startingAngle" : 60.0,
+			"targetRotationPoints" : 
+			[
+				{
+					"durationPoint" : 0.25,
+					"targetRotationSpeed" : 25.0
+				}
+			],
+			"targetSpawnIntervals" : 
+			[
+				{
+					"durationPoint" : 0.25,
+					"targetInterval" : 0.100000001
+				}
+			],
+			"targetSpeedPoints" : 
+			[
+				{
+					"durationPoint" : 0.25,
+					"targetSpeed" : 10.0
+				}
+			]
+		}
+	],
+	"systemSettings" : 
+	{
+		"invertRotationThreshold" : 0.0,
+		"repeatCount" : 0.0,
+		"rotationPerSecond" : 120.0
+	}
+}

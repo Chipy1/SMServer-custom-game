@@ -1,0 +1,30 @@
+{
+    "nameList" : [
+        "MulticoloredSpiral",
+        "F1_02_Curved_01",
+        "F1_02_Maze_01",
+        "F1_02_Maze_02",
+        "F1_02_Maze_03",
+        "F1_02_Maze_04",
+        "F1_02_Maze_05",
+        "F1_P3_Start",
+        "F1_SpiralCurved_01",
+        "F2_Cureved_pass2_01",
+        "F2_Cureved_pass2_02",
+        "F2_L3_01",
+        "F2_L3_02",
+        "F2_L3_03",
+        "Fight1_Phase1_Loop1",
+        "Fight1_Phase1_Spiral_Dodge",
+        "Fight1_Phase1_Spiral_Start",
+        "Fight1_Phase1_Spiral_Transition",
+        "Fight1_Phase1_Start",
+        "Fight1_Phase2_AlternatingCircle",
+        "Fight1_Phase2_Maze1",
+        "Fight1_Phase2_StaticCombined",
+        "Fight1_Phase2_WavyChaos",
+        "Fight1_Phase3_Curved_Alternating",
+        "Fight1_Phase3_Curved_Basic",
+        "Fight1_Phase3_Curved_Mixup"
+    ]
+}

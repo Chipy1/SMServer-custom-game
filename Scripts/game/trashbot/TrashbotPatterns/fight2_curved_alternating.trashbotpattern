@@ -1,0 +1,107 @@
+{
+	"patternSettings" : 
+	[
+		{
+			"acceleration" : 5.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_curved02_twister_green",
+			"duration" : 5.0,
+			"maxLifetime" : 20.0,
+			"name" : "Curved_Green_01",
+			"projectileSpeed" : 0.100000001,
+			"rotationPerSecond" : 10.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.400000006,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 6.0,
+			"splitAngle" : 60.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 5.0,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_curved02_twister_purple",
+			"duration" : 5.0,
+			"maxLifetime" : 20.0,
+			"name" : "Curved_Purple_01",
+			"projectileSpeed" : 0.100000001,
+			"rotationPerSecond" : 10.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.400000006,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 6.0,
+			"splitAngle" : 60.0,
+			"startingAngle" : 30.0
+		},
+		{
+			"acceleration" : 5.0,
+			"activationDelay" : 5.0,
+			"bubbleType" : "bh_curved02_twister_green_c",
+			"duration" : 5.0,
+			"maxLifetime" : 20.0,
+			"name" : "Curved_Green_02",
+			"projectileSpeed" : 0.100000001,
+			"rotationPerSecond" : -10.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.400000006,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 6.0,
+			"splitAngle" : 60.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 5.0,
+			"activationDelay" : 5.0,
+			"bubbleType" : "bh_curved02_twister_purple_c",
+			"duration" : 5.0,
+			"maxLifetime" : 20.0,
+			"name" : "Curved_Purple_02",
+			"projectileSpeed" : 0.100000001,
+			"rotationPerSecond" : -10.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.400000006,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 3.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 6.0,
+			"splitAngle" : 60.0,
+			"startingAngle" : 30.0
+		}
+	],
+	"systemSettings" : 
+	{
+		"invertRotationThreshold" : 0.0,
+		"repeatCount" : 2.0,
+		"rotationPerSecond" : 0.0
+	}
+}

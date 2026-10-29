@@ -1,0 +1,7 @@
+{
+   "shapeSetList" : [
+      "$CONTENT_DATA/Objects/Database/ShapeSets/example.shapeset",
+      "$CONTENT_DATA/Objects/Database/ShapeSets/customblocks.shapeset",
+      "$CONTENT_DATA/Objects/Database/ShapeSets/customcraftbot.shapeset"
+   ]
+}

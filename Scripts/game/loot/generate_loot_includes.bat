@@ -1,0 +1,1 @@
+python ../../../../Python/generate_loot_includes.py

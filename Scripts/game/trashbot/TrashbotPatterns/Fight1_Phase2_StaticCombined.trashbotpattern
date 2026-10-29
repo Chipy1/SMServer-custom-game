@@ -1,0 +1,181 @@
+{
+	"patternSettings" : 
+	[
+		{
+			"acceleration" : 0.5,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_straight_ball_green",
+			"duration" : 40.0,
+			"invertRotationEasing" : false,
+			"maxLifetime" : 25.0,
+			"name" : "Wave_01",
+			"projectileSpeed" : 8.0,
+			"rotationPerSecond" : 0.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 4.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 3.0,
+			"splitAngle" : 120.0,
+			"startingAngle" : 0.0
+		},
+		{
+			"acceleration" : 0.5,
+			"activationDelay" : 0.0,
+			"bubbleType" : "bh_straight_ball_purple",
+			"duration" : 40.0,
+			"invertRotationEasing" : false,
+			"maxLifetime" : 25.0,
+			"name" : "Wave_01",
+			"projectileSpeed" : 8.0,
+			"rotationPerSecond" : 0.0,
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.200000003,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 4.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 3.0,
+			"splitAngle" : 120.0,
+			"startingAngle" : 60.0
+		},
+		{
+			"acceleration" : 1.0,
+			"activationDelay" : 20.0,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 20.0,
+			"invertRotationEasing" : false,
+			"invertRotationThreshold" : 58.0,
+			"maxLifetime" : 25.0,
+			"name" : "Addon_01_ZigZag",
+			"projectileSpeed" : 5.0,
+			"rotationPerSecond" : 20.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 0.800000012,
+				"skipDuration" : 0.300000012
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.100000001,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 4.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 6.0,
+			"splitAngle" : 60.0,
+			"startingAngle" : 2.0
+		},
+		{
+			"acceleration" : 1.0,
+			"activationDelay" : 20.0,
+			"bubbleType" : "bh_straight_star_green",
+			"duration" : 20.0,
+			"invertRotationEasing" : false,
+			"invertRotationThreshold" : 58.0,
+			"maxLifetime" : 25.0,
+			"name" : "Addon_01_ZigZag_clockwize",
+			"projectileSpeed" : 5.0,
+			"rotationPerSecond" : -20.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 0.800000012,
+				"skipDuration" : 0.600000024
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.100000001,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 4.0,
+					"range" : 3.0
+				}
+			},
+			"split" : 6.0,
+			"splitAngle" : 60.0,
+			"startingAngle" : 2.0
+		},
+		{
+			"acceleration" : 1.0,
+			"activationDelay" : 1.0,
+			"bubbleType" : "bh_straight_star_purple",
+			"duration" : 19.0,
+			"maxLifetime" : 25.0,
+			"name" : "Addon_2_WallGaps",
+			"projectileSpeed" : 5.0,
+			"rotationPerSecond" : 90.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 0.349999994,
+				"skipDuration" : 1.0
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.01,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 2.0,
+					"range" : 2.0
+				}
+			},
+			"split" : 4.0,
+			"splitAngle" : 90.0,
+			"startingAngle" : 2.0
+		},
+		{
+			"acceleration" : 1.0,
+			"activationDelay" : 1.2,
+			"bubbleType" : "bh_straight_star_green",
+			"duration" : 18.799999,
+			"maxLifetime" : 25.0,
+			"name" : "Addon_2_WallGaps",
+			"projectileSpeed" : 5.0,
+			"rotationPerSecond" : 90.0,
+			"skipInterval" : 
+			{
+				"fireDuration" : 0.349999994,
+				"skipDuration" : 1.0
+			},
+			"spawnChance" : 1.0,
+			"spawnInterval" : 0.01,
+			"spawnShapeType" : 
+			{
+				"type" : "Single",
+				"values" : 
+				{
+					"amount" : 2.0,
+					"range" : 2.0
+				}
+			},
+			"split" : 4.0,
+			"splitAngle" : 90.0,
+			"startingAngle" : 45.0
+		}
+	],
+	"systemSettings" : 
+	{
+		"invertRotationThreshold" : 0.0,
+		"repeatCount" : 0.0,
+		"rotationPerSecond" : 0.0
+	}
+}
