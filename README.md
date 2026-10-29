@@ -52,6 +52,11 @@ Blocks (workshop UUIDs are preserved):
 | Sun-Light Panel | `f8fb8503-3af8-489f-9244-465d7d5df1eb` |
 | Private Block | `e85e06c9-628d-4327-a6dc-10a19e7fbf47` |
 
+Inventory/craftbot icons live in `Gui/IconMap.xml` and `Gui/IconMap.png`
+(96x96 frames cropped from the original workshop atlas). The game merges this
+`ItemIconsSet0` resource with the stock, SComputers and Modpack maps, so adding
+it does not hide stock icons. Add an `<Index>` + frame for any new block.
+
 `Objects/Database/ShapeSets/customcraftbot.shapeset` re-declares the five
 stock craftbot UUIDs with `CustomCrafter.lua`, a fork of the stock crafter that
 adds the `craftbot_custom` recipe category. The custom recipes live in
