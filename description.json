@@ -11,6 +11,11 @@
          "fileId": 2448492759,
          "localId": "b7443f95-67b7-4f1e-82f4-9bef0c62c4b3",
          "name": "The Modpack Continuation"
+      },
+      {
+         "fileId": 3829430797,
+         "localId": "2d9d788c-db36-4ab9-8445-b70e2f59bd91",
+         "name": "atstd lift"
       }
    ],
    "description": "A minimal survival-based Custom Game for Scrap Mechanic. It keeps the stock survival game logic and provides a clean base for custom gameplay, server-side hardening, and future content.",
